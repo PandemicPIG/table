@@ -56,8 +56,7 @@ class InsertForm {
         /*
             checks and adds a new "row" in the catalogue
         */
-
-        //check if data is valid
+        
         var valid = true;
         
         var RFC_2822_email_regex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
@@ -65,6 +64,7 @@ class InsertForm {
         //clear errors
         this.clearErrors();
         
+        //check if data is valid
         this.config.header.map( (row,i) => {
             if( !row.optional ){
                 if( row.type == 'text' && data[row.field].length < 1 ){
@@ -93,7 +93,7 @@ class InsertForm {
         if( valid ){
             console.info('success');
             
-            //IPORTANT - use push methode as the table viewer uses litener on this methode in relation to the catalogue
+            //IPORTANT - use push methode as the table viewer uses listener on this methode in relation to the catalogue
             this.catalogue.push(data);
             
             document.querySelectorAll('#' + this.id + ' input').forEach( elm => elm.value = '' );

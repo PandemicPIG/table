@@ -75,7 +75,7 @@ class TableView {
         //creates new event to be called each time catalog gets a new element
         this.update = new Event('update');
         
-        //attache element call to catalog push methode
+        //attach element call to catalog push methode
         cat.push = (...args) => {
             args.map( elm => Array.prototype.push.call(cat, elm) );
             document.dispatchEvent(this.update);
