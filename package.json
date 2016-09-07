@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "form and table test",
+  "main": "index.html",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "dan v",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^0.13.22",
+    "karma-chai-plugins": "^0.7.0",
+    "karma-chai-sinon": "^0.1.5",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-sinon": "^1.0.5",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.5"
+  }
+}

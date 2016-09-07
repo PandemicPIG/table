@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+}
+
+.form_wrapper {
+    width: 200px;
+    padding: 30px;
+    float: left;
+}
+
+.table_wrapper {
+    width: calc(100% - 290px);
+    padding: 30px 30px 0 0;
+    float: left;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 3px 5px;
+    border: 0px;
+    box-shadow: 0px 1px 2px gray inset;
+    line-height: 19px;
+    font-size: 14px;
+}
+
+form [id$="_submit"] {
+    display: block;
+    cursor: pointer;
+    background: pink;
+    margin-top: 8px;
+    padding: 3px 0;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    vertical-align: top;
+}
+
+table th a {
+    cursor: pointer;
+}
+
+table th a.up:before {
+    content: '\2192';
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+table th a.down:before {
+    content: '\2192';
+    display: inline-block;
+    transform: rotate(270deg);
+}
+
+table th input {
+    display: block;
+    width: calc(100% - 6px);
+    margin: 0 3px;
+}
+
+table th input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+table th {
+    border-right: 1px solid lightgray;
+    font-weight: bold;
+}
+
+table th:last-child {
+    border-right: 0;
+}
+
+table td {
+    border: 1px solid lightgray;
+    padding: 3px 5px;
+}
+
+table td:first-child {
+    border-left: 0;
+}
+
+table td:last-child {
+    border-right: 0;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
