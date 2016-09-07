@@ -102,6 +102,6 @@ Ex:
 var form = new InsertForm('myFormId', '.form_wrapper', config, my_table, 'Add new row');
 ```
 
-Styleling can be ajusted if necesary, the table
+Styling can be ajusted if necesary, the table
 and form will adjust to the whole area of their
 parent by default
