@@ -1,6 +1,12 @@
 ## dynamic generated table and form
 
 
+```
+#### file dependencies
+InsertForm.js
+TableView.js
+```
+
 The table app can take any table structure as log as it is 
 provided as an array of objects (can be empty) and an config. 
 
